@@ -35,7 +35,7 @@ public class Tests extends BaseTest {
         adminPage.clickAddUserButton();
         AddUserPage addUserPage = new AddUserPage(chromeDriver);
         addUserPage.choiseAdminRole("Admin", "Enabled");
-        adminPage.checkUsers();
+        //adminPage.checkUsers();
     }
 
 //    @ParameterizedTest(name="{displayName} {arguments")

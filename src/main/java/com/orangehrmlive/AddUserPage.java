@@ -39,8 +39,8 @@ public class AddUserPage {
         userStatus.click();
         WebElement statusOption = chromeDriver.findElement(By.xpath("//div[@role='option' and normalize-space()='" + status + "']"));
         statusOption.click();
-        userEmployeeName.sendKeys("test1  test1");
-        WebElement employeeListBox = chromeDriver.findElement(By.xpath("//div[@role='listbox']//span[text()='test1  test1']"));
+        userEmployeeName.sendKeys("Qwerty Qwerty LName");
+        WebElement employeeListBox = chromeDriver.findElement(By.xpath("//div[@role='listbox']//span[text()='Qwerty Qwerty LName']"));
         employeeListBox.click();
         userName.sendKeys("DenTest");
         userPassword.sendKeys("a234567");
