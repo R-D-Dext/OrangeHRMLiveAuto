@@ -82,6 +82,8 @@
                 <configuration>
                     <systemPropertyVariables>
                         <allure.results.directory>target/allure-results</allure.results.directory>
+                        <browser>chrome</browser>
+                        <baseUrl>https://opensource-demo.orangehrmlive.com/</baseUrl>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
