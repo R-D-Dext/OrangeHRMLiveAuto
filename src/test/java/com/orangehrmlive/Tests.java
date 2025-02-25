@@ -27,15 +27,15 @@ public class Tests extends BaseTest {
         sidebar.clickAdminHref();
     }
 
-    @DisplayName("Проверка добавления нового юзера")
+    @DisplayName("Проверка добавление и удаление нового юзера")
     @Test
-    public void addUser() {
+    public void addAndDeleteUser() {
         sideBarCheck();
         AdminPage adminPage = new AdminPage(chromeDriver);
         adminPage.clickAddUserButton();
         AddUserPage addUserPage = new AddUserPage(chromeDriver);
         addUserPage.choiseAdminRole("Admin", "Enabled");
-        //adminPage.checkUsers();
+        adminPage.checkAnddeleteUserByName();
     }
 
 //    @ParameterizedTest(name="{displayName} {arguments")
