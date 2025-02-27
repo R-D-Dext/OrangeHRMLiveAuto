@@ -17,7 +17,7 @@ node {
             }
         }
         try {
-            parallel getTestStages(["apiTests", "uiTests"])
+            parallel getTestStages(["Tests"])
         } finally {
             stage ("Allure") {
                 generateAllure()
@@ -52,7 +52,7 @@ def getTestStages(testTags) {
 }
 def runTestWithTag(String tag) {
     try {
-        labelledShell(label: "Run ${tag}", script: "chmod +x gradlew \n./gradlew -x test ${tag}")
+        labelledShell(label: "Run ${tag}", script: "mvn test -Dtest=${tag}")
     } finally {
         echo "some failed tests"
     }
