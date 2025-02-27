@@ -24,6 +24,7 @@ node {
                 generateAllure()
             }
         }
+
 //        try {
 //            stage("Run tests") {
 //                parallel(
@@ -40,6 +41,7 @@ node {
 //                generateAllure()
 //            }
 //        }
+
     }
 }
 def getTestStages(testTags) {
