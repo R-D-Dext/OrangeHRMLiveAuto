@@ -18,7 +18,7 @@ node {
             }
         }
         try {
-            parallel getTestStages(["Tests"])
+            parallel getTestStages(["com.orangehrmlive.Tests"])
         } finally {
             stage ("Allure") {
                 generateAllure()
