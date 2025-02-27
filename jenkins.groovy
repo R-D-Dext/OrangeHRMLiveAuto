@@ -18,7 +18,7 @@ node {
             }
         }
         try {
-            parallel getTestStages(["runners.Tests"])
+            parallel getTestStages(["Tests"])
         } finally {
             stage ("Allure") {
                 generateAllure()
